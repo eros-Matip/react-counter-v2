@@ -1,38 +1,76 @@
+/******** HEADER ********/
+.header {
+  display: flex;
+}
+.header i {
+  font-size: xx-large;
+  color: rgb(87, 77, 204);
+}
+p.header {
+  display: flex;
+  align-items: center;
+  margin: 0px 40px;
+}
+h1 {
+  font-weight: 400;
+}
+hr {
+  opacity: 0.4;
+}
+/******** BODY ********/
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+.counter {
+  display: flex;
+}
+.btn-counter {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(87, 77, 204);
   color: white;
+  font-size: x-large;
+  margin: 50px;
+}
+.result {
+  border: 1px solid;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  background-color: rgb(87, 77, 204);
+  color: white;
+  border-radius: 5px;
+  margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.minus,
+.plus {
+  font-size: xx-large;
+  border: none;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.plus:focus {
+  outline: none;
+}
+button.minus:focus {
+  outline: none;
+}
+
+/******** FOOTER ********/
+.footer {
+  text-align: center;
+}
+strong {
+  color: rgb(87, 77, 204);
 }
