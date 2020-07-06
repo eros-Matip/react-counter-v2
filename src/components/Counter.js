@@ -20,7 +20,7 @@ const Counter = ({ counters, setCounters }) => {
         <div key={index}>
           <div className="counter">
             {/* ****** BUTTON MORE ***** */}
-            {counters < 10 && (
+            {counter <= 10 && (
               <button
                 className="plus"
                 onClick={() => {
@@ -37,7 +37,8 @@ const Counter = ({ counters, setCounters }) => {
             <div className="result">{counter}</div>
 
             {/* ****** BUTTON LESS ***** */}
-            {counters > 0 && (
+
+            {counter > 0 && (
               <button
                 className="minus"
                 onClick={() => {
