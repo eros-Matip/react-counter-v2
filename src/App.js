@@ -12,7 +12,7 @@ function App() {
       <Header />
       <hr />
       <Counter counters={counters} setCounters={setCounters} />
-      <Footer application={"React"} from={"Le reacteur"} name={"Éros"} />
+      <Footer application={"ReactJS"} name={"Éros"} />
     </div>
   );
 }

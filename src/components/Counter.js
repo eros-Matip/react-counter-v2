@@ -19,23 +19,6 @@ const Counter = ({ counters, setCounters }) => {
       {counters.map((counter, index) => (
         <div key={index}>
           <div className="counter">
-            {/* ****** BUTTON MORE ***** */}
-            {counter <= 10 && (
-              <button
-                className="plus"
-                onClick={() => {
-                  const newCounters = [...counters];
-                  newCounters[index]++;
-                  setCounters(newCounters);
-                }}
-              >
-                <i class="fas fa-plus"></i>
-              </button>
-            )}
-
-            {/* ****** COUNTER ***** */}
-            <div className="result">{counter}</div>
-
             {/* ****** BUTTON LESS ***** */}
 
             {counter > 0 && (
@@ -47,7 +30,46 @@ const Counter = ({ counters, setCounters }) => {
                   setCounters(newCounters);
                 }}
               >
-                <i class="fas fa-minus"></i>
+                <i className="fas fa-minus"></i>
+              </button>
+            )}
+
+            {/* ****** COUNTER ***** */}
+            <div>
+              <div className="result">{counter}</div>
+              <button
+                className="btn-reset"
+                onClick={() => {
+                  // if counter is greater than 0, the new value of counter is 0
+                  if (counter > 0) {
+                    const newCounters = [...counters];
+                    newCounters[index] = 0;
+                    setCounters(newCounters);
+                  }
+                  // if counter is egual to 0, the counter disappears
+                  if (counter === 0) {
+                    const newCounters = counters.filter(
+                      (value, indexToDelete) => indexToDelete !== index
+                    );
+                    setCounters(newCounters);
+                  }
+                }}
+              >
+                reset
+              </button>
+            </div>
+
+            {/* ****** BUTTON MORE ***** */}
+            {counter < 10 && (
+              <button
+                className="plus"
+                onClick={() => {
+                  const newCounters = [...counters];
+                  newCounters[index]++;
+                  setCounters(newCounters);
+                }}
+              >
+                <i className="fas fa-plus"></i>
               </button>
             )}
           </div>

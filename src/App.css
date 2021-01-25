@@ -40,7 +40,6 @@ hr {
   margin: 50px;
 }
 .result {
-  border: 1px solid;
   width: 80px;
   height: 80px;
   display: flex;
@@ -51,6 +50,14 @@ hr {
   color: white;
   border-radius: 5px;
   margin: 20px;
+}
+.btn-reset {
+  background-color: rgb(87, 77, 204);
+  width: 80px;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+  border: none;
 }
 
 .minus,
