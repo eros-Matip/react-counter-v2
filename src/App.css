@@ -68,14 +68,12 @@ hr {
   background-color: white;
   cursor: pointer;
 }
-
 button.plus:focus {
   outline: none;
 }
 button.minus:focus {
   outline: none;
 }
-
 /******** FOOTER ********/
 .footer {
   text-align: center;
