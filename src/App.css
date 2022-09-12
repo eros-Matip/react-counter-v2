@@ -38,6 +38,7 @@ hr {
   color: white;
   font-size: x-large;
   margin: 50px;
+  cursor: pointer;
 }
 .result {
   width: 80px;
@@ -58,6 +59,7 @@ hr {
   color: white;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 
 .minus,
@@ -65,6 +67,7 @@ hr {
   font-size: xx-large;
   border: none;
   background-color: white;
+  cursor: pointer;
 }
 
 button.plus:focus {
