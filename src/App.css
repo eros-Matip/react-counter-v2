@@ -74,6 +74,8 @@ button.plus:focus {
 button.minus:focus {
   outline: none;
 }
+/********END BODY ********/
+
 /******** FOOTER ********/
 .footer {
   text-align: center;
